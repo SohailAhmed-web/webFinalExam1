@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 80px;
+    padding-left: 80px;
+    color: white;
+    background-color: black;
+}
+
+.logo-container img {
+    height: 50px; /* Adjust size as needed */
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: white!important;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: white;
+}
+
+.start-free-btn {
+    border: 2px solid #51deec; /* Your color */
+    background: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #51deec;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

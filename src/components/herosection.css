@@ -1,0 +1,35 @@
+.hero-background {
+    background-image: url('../assets/imgs/herobackgroundimgveesar.png'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+.hero-container h1 {
+    font-size: 5rem; /* Adjust size as needed for different devices */
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero-container h6 {
+    margin-bottom: 70px;
+    color: white;
+}
+
+.play-button {
+
+
+}
+
+.hero-image {
+    margin-top: 5rem;
+    max-width: 60%;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-container h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,58 @@
+.masterpiece-background{
+    background-image: url('../assets/imgs/masterpiecebgimg.png'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+
+.masterpiece-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 70px;
+    margin-top: 8rem;
+}
+
+.left-column {
+
+}
+
+.left-column h1 {
+    margin-bottom: 30px;
+    font-size: 4rem;
+}
+
+.left-column p {
+    margin-bottom: 30px;
+}
+
+.start-building-btn {
+    background-color: purple; /* Your brand color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.masterPiece-right-column {
+    display: flex;
+    justify-items: end;
+    justify-content: end;
+    align-items: end;
+}
+
+.masterPiece-right-column img {
+    width: 80%;
+    height: auto;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .masterpiece-container {
+        flex-direction: column;
+    }
+}

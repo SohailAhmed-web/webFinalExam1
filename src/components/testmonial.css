@@ -1,0 +1,15 @@
+.testmonial-bg {
+    background-image: url('../assets/imgs/testmonialbgimg.png'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0; /* Adjust padding as needed */
+    color: white;
+}
+
+.testmonial-bg p{
+    font-size: 30px;
+    text-align: justify;
+}
+.test-text{
+    margin-top: 15rem!important;
+}

@@ -1,0 +1,21 @@
+.scroll-view-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.scroll-view {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.scroll-view img {
+    width: auto; /* Adjust based on your requirement */
+    height: 60px; /* Adjust based on your requirement */
+    margin: 0 20px;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Adjust based on the total width of your logos */
+}

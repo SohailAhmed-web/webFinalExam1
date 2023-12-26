@@ -1,0 +1,29 @@
+.scrollable-cards-container {
+    background-image: url('../assets/imgs/cardbg.jpeg'); /* Add your background image here */
+    background-size: cover;
+    padding: 110px;
+    overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+.scrollable-cards-row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping of cards */
+}
+
+.scrollable-card {
+    flex: 0 0 auto; /* Prevents cards from shrinking */
+    width: 350px; /* Adjust card width as needed */
+    margin-right: 60px; /* Space between cards */
+}
+
+.scrollable-card img {
+    height: 200px; /* Adjust image height as needed */
+    object-fit: cover; /* Ensures images cover the card area */
+}
+
+.scrollable-card p,
+.scrollable-card h2 {
+    padding: 0 15px; /* Padding inside card */
+}
+
+/* Responsive adjustments can be added if needed */
