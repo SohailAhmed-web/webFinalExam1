@@ -1,5 +1,5 @@
 import React from 'react';
-import './web3dapps.css'; // Import the CSS file for styling
+import './web3dapps.css';
 import web3appsimg from '../assets/imgs/web3dapps.png'
 
 const Web3Dapps = () => {
