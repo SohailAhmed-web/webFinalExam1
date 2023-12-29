@@ -1,14 +1,16 @@
 import React from "react";
-import  footerimg from '../assets/imgs/footer.png'
-
-
-
-const Footer =() => {
-    return(
-        <div className="row">
-            <img src={footerimg} alt="Footer"/>
-        </div>
-
+import { Container, Row, Col } from 'react-bootstrap';
+import footerimg from '../assets/imgs/footer.png';
+import "./Footer.css"
+const Footer = () => {
+    return (
+        <Container fluid>
+            <Row>
+                <Col xs={12}>
+                    <img src={footerimg} alt="Footer" className="img-fluid" />
+                </Col>
+            </Row>
+        </Container>
     );
 };
 

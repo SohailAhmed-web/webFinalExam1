@@ -1,0 +1,5 @@
+.img-fluid {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Adjust maximum height as needed */
+}

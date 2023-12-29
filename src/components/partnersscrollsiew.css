@@ -1,3 +1,5 @@
+/* Partners Scroll View Styles */
+
 .scroll-view-container {
     width: 100%;
     overflow: hidden;
@@ -10,12 +12,35 @@
 }
 
 .scroll-view img {
-    width: auto; /* Adjust based on your requirement */
-    height: 60px; /* Adjust based on your requirement */
+    height: 60px; /* Maintain a consistent height */
     margin: 0 20px;
+    flex-shrink: 0; /* Prevent the images from shrinking */
 }
 
+/* Adjust scrolling animation to the total width of logos */
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Adjust based on the total width of your logos */
+    100% { transform: translateX(-50%); }
 }
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .scroll-view img {
+        height: 40px; /* Smaller logos for smaller screens */
+        margin: 0 10px; /* Less margin between logos */
+    }
+
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); } /* Increased translate value for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .scroll-view img {
+        height: 30px; /* Even smaller logos for very small screens */
+        margin: 0 5px; /* Minimal margin */
+    }
+}
+
+/* Additional responsive adjustments as needed based on testing */

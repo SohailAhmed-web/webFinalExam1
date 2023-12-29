@@ -1,10 +1,49 @@
-.row-of-future{
-    margin-top: 8rem;
-}
-.future-bg{
-    background-image: url('../assets/imgs/futurebgimg.png'); /* Add your background image here */
+/* Future Section Styles */
+
+.future-bg {
+    background-image: url('../assets/imgs/futurebgimg.png'); /* Background Image */
     background-size: cover;
     background-position: center;
     padding: 50px 0;
     color: white;
 }
+
+.row-of-future {
+    margin-top: 4rem; /* Adjust top margin */
+}
+
+/* Heading and Subheading Styles */
+h1, h6 {
+    margin-bottom: 20px; /* Spacing after headings */
+}
+
+/* Image and Text Styles for the Grid */
+.row-of-future .col-xl-3, .row-of-future .col-lg-3, .row-of-future .col-md-12, .row-of-future .col-sm-12 {
+    margin-bottom: 20px; /* Spacing between items */
+}
+
+.row-of-future img {
+    max-width: 100%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Adjustments for Tablets */
+@media (max-width: 992px) {
+    .row-of-future .col-xl-3, .row-of-future .col-lg-3 {
+        width: 50%; /* Adjust width for tablet view */
+        margin-bottom: 30px; /* Increase spacing */
+    }
+}
+
+/* Responsive Adjustments for Mobile Devices */
+@media (max-width: 768px) {
+    .row-of-future .col-xl-3, .row-of-future .col-lg-3, .row-of-future .col-md-12, .row-of-future .col-sm-12 {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .row-of-future {
+        margin-top: 2rem; /* Reduce top margin for smaller screens */
+    }
+}
+
+

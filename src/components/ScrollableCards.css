@@ -1,7 +1,9 @@
+/* Scrollable Cards Section Styles */
+
 .scrollable-cards-container {
-    background-image: url('../assets/imgs/cardbg.jpeg'); /* Add your background image here */
+    background-image: url('../assets/imgs/cardbg.jpeg'); /* Background Image */
     background-size: cover;
-    padding: 110px;
+    padding: 50px; /* Adjusted padding */
     overflow-x: auto; /* Enables horizontal scrolling */
 }
 
@@ -12,12 +14,12 @@
 
 .scrollable-card {
     flex: 0 0 auto; /* Prevents cards from shrinking */
-    width: 350px; /* Adjust card width as needed */
-    margin-right: 60px; /* Space between cards */
+    width: 350px; /* Card width */
+    margin-right: 30px; /* Space between cards */
 }
 
 .scrollable-card img {
-    height: 200px; /* Adjust image height as needed */
+    height: 200px; /* Image height */
     object-fit: cover; /* Ensures images cover the card area */
 }
 
@@ -26,4 +28,35 @@
     padding: 0 15px; /* Padding inside card */
 }
 
-/* Responsive adjustments can be added if needed */
+/* Responsive Adjustments for Tablets */
+@media (max-width: 992px) {
+    .scrollable-card {
+        width: 300px; /* Smaller card width */
+    }
+
+    .scrollable-card img {
+        height: 180px; /* Adjusted image height */
+    }
+}
+
+/* Responsive Adjustments for Mobile Devices */
+@media (max-width: 768px) {
+    .scrollable-cards-container {
+        padding: 30px; /* Reduced padding */
+    }
+
+    .scrollable-card {
+        width: 100%; /* Full width on small screens */
+        margin-right: 15px; /* Smaller space between cards */
+    }
+
+    .scrollable-card img {
+        height: 150px; /* Further reduced image height */
+    }
+
+    .scrollable-cards-row {
+        justify-content: center; /* Center cards for better appearance */
+    }
+}
+
+/* Further adjustments based on testing and design preferences */

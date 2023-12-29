@@ -1,35 +1,66 @@
+/* Hero Section Styles */
+
 .hero-background {
-    background-image: url('../assets/imgs/herobackgroundimgveesar.png'); /* Add your background image here */
+    background-image: url('../assets/imgs/herobackgroundimgveesar.png'); /* Background Image */
     background-size: cover;
     background-position: center;
     padding: 50px 0; /* Adjust padding as needed */
 }
 
 .hero-container h1 {
-    font-size: 5rem; /* Adjust size as needed for different devices */
+    font-size: 3rem; /* Adjust for larger screens if needed */
     margin-bottom: 20px;
     color: white;
 }
 
 .hero-container h6 {
-    margin-bottom: 70px;
+    font-size: 1.2rem; /* Adjust font size for better readability */
+    margin-bottom: 40px;
     color: white;
 }
 
 .play-button {
-
-
+    cursor: pointer; /* If the play button is interactive */
+    width: 50px; /* Adjust size as needed */
+    margin-bottom: 2rem;
 }
 
 .hero-image {
-    margin-top: 5rem;
-    max-width: 60%;
+    width: 100%; /* Responsive width */
+    max-width: 500px; /* Maximum size */
     height: auto;
+    margin-top: 2rem;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+/* Responsive Adjustments */
+@media (max-width: 992px) {
     .hero-container h1 {
-        font-size: 2rem;
+        font-size: 2.5rem; /* Slightly smaller font size for tablets */
+    }
+
+    .hero-container h6 {
+        font-size: 1rem;
     }
 }
+
+@media (max-width: 768px) {
+    .hero-container h1 {
+        font-size: 2rem; /* Even smaller font size for mobile devices */
+    }
+
+    .hero-container h6 {
+        font-size: 0.9rem; /* Smaller for readability on mobile */
+    }
+
+    .play-button {
+        width: 40px; /* Smaller button on mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-background {
+        padding: 30px 0; /* Less padding on very small screens */
+    }
+}
+
+/* Further refinements may be needed based on actual content and design preferences */

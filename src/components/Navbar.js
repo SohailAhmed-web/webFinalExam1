@@ -1,24 +1,26 @@
 import React from 'react';
-import './navbar.css'; // Assuming you have a CSS file for styles
-import logoImg from '../assets/imgs/logo-manerh.png'
-
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap'; // Import Bootstrap components
+import './navbar.css';
+import logoImg from '../assets/imgs/logo-manerh.png';
 
 const NavBar = () => {
     return (
-            <nav className="navbar d-flex align-items-center">
-                <div className="logo-container">
-                    <img src={logoImg} alt="Logo" height="130px" width="100px" />
-                </div>
-                <ul className="nav-items d-flex align-items-center mt-3">
-                    <li><a href="#web3makr">Web3Makr</a></li>
-                    <li><a href="#whitepaper">White Paper</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#tools">Tools</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><button className="start-free-btn btn-info">Start For Free</button></li>
-                </ul>
-            </nav>
-
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar.Brand href="#home">
+                <img src={logoImg} alt="Logo" height="50px"/>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="ml-auto">
+                    <Nav.Link href="#web3makr">Web3Makr</Nav.Link>
+                    <Nav.Link href="#whitepaper">White Paper</Nav.Link>
+                    <Nav.Link href="#service">Service</Nav.Link>
+                    <Nav.Link href="#tools">Tools</Nav.Link>
+                    <Nav.Link href="#contact">Contact Us</Nav.Link>
+                    <Nav.Link href="#start-free"><button className="start-free-btn">Start For Free</button></Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
     );
 }
 

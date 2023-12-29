@@ -1,15 +1,50 @@
+/* Testimonial Section Styles */
+
 .testmonial-bg {
-    background-image: url('../assets/imgs/testmonialbgimg.png'); /* Add your background image here */
+    background-image: url('../assets/imgs/testmonialbgimg.png'); /* Background Image */
     background-size: cover;
     background-position: center;
-    padding: 50px 0; /* Adjust padding as needed */
+    padding: 50px 0;
     color: white;
 }
 
-.testmonial-bg p{
-    font-size: 30px;
+.testmonial-bg p {
+    font-size: 1.5rem; /* Adjust font size for readability */
     text-align: justify;
 }
-.test-text{
-    margin-top: 15rem!important;
+
+/* Image Styling */
+.testmonial-bg img {
+    max-width: 100%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
 }
+
+/* Testimonial Text Styling */
+.test-text {
+    margin-top: 2rem; /* Adjust top margin */
+}
+
+/* Responsive Adjustments for Tablets */
+@media (max-width: 992px) {
+    .testmonial-bg p {
+        font-size: 1.2rem; /* Slightly smaller font size for tablets */
+    }
+}
+
+/* Responsive Adjustments for Mobile Devices */
+@media (max-width: 768px) {
+    .testmonial-bg p {
+        font-size: 1rem; /* Even smaller font size for mobile devices */
+    }
+
+    /* Adjusting layout for smaller screens */
+    .testmonial-bg .row > div {
+        margin-bottom: 20px; /* Spacing between columns when stacked */
+    }
+
+    .test-text {
+        margin-top: 1rem; /* Reduced top margin for mobile view */
+    }
+}
+
+

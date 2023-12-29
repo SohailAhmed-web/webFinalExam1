@@ -1,29 +1,16 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 80px;
-    padding-left: 80px;
-    color: white;
-    background-color: black;
+/* Custom Navbar Styles */
+
+/* Adjust the navbar brand/logo */
+.navbar-brand img {
+    height: 50px; /* Adjust the size of your logo */
 }
 
-.logo-container img {
-    height: 50px; /* Adjust size as needed */
+/* Style for the navbar links */
+.nav-link {
+    color: white!important; /* Set the color of the navbar links */
 }
 
-.nav-items {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    color: white!important;
-}
-
-.nav-items li a {
-    text-decoration: none;
-    color: white;
-}
-
+/* Custom button in the navbar */
 .start-free-btn {
     border: 2px solid #51deec; /* Your color */
     background: transparent;
@@ -32,10 +19,40 @@
     color: #51deec;
 }
 
-/* Responsive */
+/* Hover effect for navbar links */
+.nav-link:hover {
+    color: #51deec!important; /* Change color on hover */
+}
+
+/* Customizations for the collapsed navbar menu (hamburger menu) */
+.navbar-toggler {
+    border-color: #51deec; /* Color of the hamburger icon */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%2351deec' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* Customize the color of the hamburger icon bars */
+}
+
+/* Styles for the navbar when expanded */
+.navbar-collapse {
+    justify-content: flex-end; /* Align nav items to the right */
+}
+
+/* Responsive styling for smaller screens */
 @media (max-width: 768px) {
-    .nav-items {
-        flex-direction: column;
-        gap: 10px;
+    .navbar-nav {
+        text-align: center; /* Center align nav items on small screens */
+    }
+
+    .nav-link {
+        padding: .5rem 1rem; /* Adjust padding for nav links */
+    }
+
+    /* Style adjustments for the mobile view */
+    .navbar-brand img {
+        height: 40px; /* Adjust the logo size for mobile */
     }
 }
+
+/* Additional responsive and aesthetic customizations as needed */

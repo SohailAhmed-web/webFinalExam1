@@ -68,4 +68,5 @@ const Future = () =>{
         </div>
     )
 }
+
 export default  Future;

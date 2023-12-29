@@ -1,35 +1,33 @@
-.masterpiece-background{
-    background-image: url('../assets/imgs/masterpiecebgimg.png'); /* Add your background image here */
+/* Masterpiece Section Styles */
+
+.masterpiece-background {
+    background-image: url('../assets/imgs/masterpiecebgimg.png'); /* Background Image */
     background-size: cover;
     background-position: center;
     padding: 50px 0;
 }
-
 
 .masterpiece-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    gap: 70px;
+    gap: 70px; /* Spacing between columns */
     margin-top: 8rem;
-}
-
-.left-column {
-
 }
 
 .left-column h1 {
     margin-bottom: 30px;
-    font-size: 4rem;
+    font-size: 3rem; /* Adjust font size for larger screens if needed */
 }
 
 .left-column p {
     margin-bottom: 30px;
+    font-size: 1rem; /* Adjust font size for readability */
 }
 
 .start-building-btn {
-    background-color: purple; /* Your brand color */
+    background-color: purple;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -39,20 +37,55 @@
 
 .masterPiece-right-column {
     display: flex;
-    justify-items: end;
     justify-content: end;
     align-items: end;
 }
 
 .masterPiece-right-column img {
-    width: 80%;
+    width: 100%; /* Full width within the column */
+    max-width: 600px; /* Maximum size */
     height: auto;
-
 }
 
-/* Responsive Design */
+/* Responsive Adjustments for Tablets */
+@media (max-width: 992px) {
+    .left-column h1 {
+        font-size: 2.5rem;
+    }
+
+    .left-column p {
+        font-size: 0.9rem;
+    }
+
+    .masterPiece-right-column img {
+        max-width: 500px;
+    }
+}
+
+/* Responsive Adjustments for Mobile Devices */
 @media (max-width: 768px) {
     .masterpiece-container {
         flex-direction: column;
+        gap: 30px; /* Reduced gap for smaller screens */
+        margin-top: 4rem; /* Less top margin */
+    }
+
+    .left-column, .masterPiece-right-column {
+        width: 100%;
+        max-width: none; /* Full width on small screens */
+    }
+
+    .left-column h1 {
+        font-size: 2rem;
+    }
+
+    .left-column p {
+        font-size: 0.8rem;
+    }
+
+    .masterPiece-right-column img {
+        max-width: 100%; /* Full width of the container */
     }
 }
+
+/* Further adjustments based on testing and design preferences */

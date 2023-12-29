@@ -1,25 +1,23 @@
+/* Web3Dapps Section Styles */
 
-.web3bg{
-    background-image: url('../assets/imgs/webbgimg.png'); /* Add your background image here */
+.web3bg {
+    background-image: url('../assets/imgs/webbgimg.png'); /* Background Image */
     background-size: cover;
     background-position: center;
     padding: 50px 0;
 }
 
-
-
-
 .web3dapps-container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Align items at the start of the flex container */
+    align-items: center;
     padding: 20px;
-    gap: 70px;
+    gap: 70px; /* Spacing between columns */
 }
 
 .left-column img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Full width within the column */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .right-column {
@@ -27,17 +25,17 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    margin-top: 4rem;/* Stack children vertically */
+    margin-top: 4rem;
 }
 
 .right-column h1,
 .right-column p,
 .right-column button {
-    margin-bottom: 15px; /* Consistent spacing between elements */
+    margin-bottom: 15px; /* Consistent spacing */
 }
 
 .start-building-btn {
-    background-color: purple; /* Your brand color */
+    background-color: purple;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -45,14 +43,44 @@
     border-radius: 5px;
 }
 
-/* Responsive Design */
+/* Responsive Adjustments for Tablets */
+@media (max-width: 992px) {
+    .right-column h1 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .right-column p {
+        font-size: 0.9rem; /* Smaller paragraph font size */
+    }
+}
+
+/* Responsive Adjustments for Mobile Devices */
 @media (max-width: 768px) {
     .web3dapps-container {
         flex-direction: column;
-        align-items: center; /* Center align items for smaller screens */
+        gap: 30px; /* Reduced gap for smaller screens */
     }
 
-    .left-column, .right-column {
-        width: 100%; /* Full width for smaller screens */
+    .left-column,
+    .right-column {
+        width: 100%; /* Full width on small screens */
+        max-width: none;
+    }
+
+    .right-column {
+        margin-top: 2rem; /* Reduced top margin */
+        align-items: center; /* Center alignment for text content */
+    }
+
+    .right-column h1 {
+        font-size: 1.25rem; /* Smaller heading font size */
+        text-align: center; /* Centered text for headings */
+    }
+
+    .right-column p {
+        font-size: 0.8rem; /* Smaller paragraph font size */
+        text-align: center; /* Centered text for paragraphs */
     }
 }
+
+/* Further adjustments based on testing and design preferences */

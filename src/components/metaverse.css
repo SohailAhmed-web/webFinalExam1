@@ -1,19 +1,73 @@
-.div-of-mataverse{
+/* Metaverse Section Styles */
 
+.metavers-bg {
+    background-image: url('../assets/imgs/metaversebgimg.png'); /* Background Image */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    margin-top: 4rem; /* Adjusted top margin */
 }
 
-.start-building-btn-b{
+/* Styling for the start building button */
+.start-building-btn-b {
     background-color: purple;
     color: white;
     border-radius: 5px;
     height: 3rem;
     width: 10em;
+    padding: 0.5rem 1rem; /* Adjust padding for button text */
+    font-size: 1rem; /* Adjust font size */
+    border: none;
+    cursor: pointer;
 }
-.metavers-bg {
-    background-image: url('../assets/imgs/metaversebgimg.png'); /* Add your background image here */
-    background-size: cover;
-    background-position: center;
-    padding: 50px 0; /* Adjust padding as needed */
-    margin-top: 8rem;
 
+/* Image Styling */
+.metavers-bg img {
+    max-width: 100%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
 }
+
+/* Heading and Text Styling */
+.metavers-bg h1 {
+    font-size: 2.5rem; /* Adjusted font size for heading */
+    text-align: center; /* Center align heading */
+}
+
+.metavers-bg p {
+    font-size: 1rem; /* Adjusted font size for paragraph */
+    text-align: center; /* Center align paragraph */
+}
+
+/* Responsive Adjustments for Tablets */
+@media (max-width: 992px) {
+    .metavers-bg {
+        padding: 30px 0; /* Reduced padding */
+    }
+
+    .metavers-bg h1 {
+        font-size: 2rem; /* Smaller font size for heading */
+    }
+}
+
+/* Responsive Adjustments for Mobile Devices */
+@media (max-width: 768px) {
+    .metavers-bg {
+        margin-top: 2rem; /* Reduced top margin */
+    }
+
+    .metavers-bg h1 {
+        font-size: 1.75rem; /* Even smaller font size for heading */
+    }
+
+    /* Adjusting the layout for smaller screens */
+    .metavers-bg .row {
+        flex-direction: column-reverse; /* Stack the image and text vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .start-building-btn-b {
+        width: 100%; /* Full width button on small screens */
+    }
+}
+
+/* Further adjustments based on testing and design preferences */
