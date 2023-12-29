@@ -8,7 +8,6 @@ const Web3Dapps = () => {
             <div className="container">
                 <div className="web3dapps-container ">
                     <div className="left-column col-sm-12 col-md-12 col-lg-9 col-xl-9">
-                        {/* Replace 'path-to-your-image.png' with the path to your image */}
                         <img src={web3appsimg} alt="Descriptive Alt Text" />
                     </div>
                     <div className="right-column col-sm-12 col-md-12 col-xl-3 col-lg-3">
